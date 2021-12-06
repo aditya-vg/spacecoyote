@@ -17,9 +17,11 @@ section {
 }
 
 .top {
-    position: relative;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
     min-height: 650px;
-    background-color: #ee9526;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,13 +33,21 @@ section {
     color: #fff;
     font-size: 4.5rem;
     line-height: 1;
+    margin-top: 60px;
     font-family: Strenuous;
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .top p {
     font-weight: 500;
     font-size: 2rem;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 
@@ -47,7 +57,8 @@ section {
 }
 
 .top .select-btn,
-.mid .select-btn {
+.mid .select-btn,
+.bottom .select-btn {
     border: 0;
     line-height: 3;
     padding: 0 40px;
@@ -58,19 +69,18 @@ section {
     color: #fff3ec;
     font-family: Strenuous;
 }
-.select-btn:hover{
+.select-btn:hover {
     color: #ffbbab;
 }
 
-
 .mid {
-    position: absolute;
+    min-height: 650px;
+    background-color: #ee9526;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
     margin: auto;
-    max-width: 800px;
     padding: 20px;
     display: flex;
     color: #fff;
@@ -78,11 +88,12 @@ section {
     align-items: center;
     flex-direction: column;
 }
-.mid p { 
+.mid p {
     font-size: 1.5rem;
     color: #000;
     text-align: center;
     color: #fff;
+    max-width: 650px;
 }
 
 .mid h2 {
@@ -92,9 +103,30 @@ section {
     text-align: center;
     font-family: Strenuous;
 }
+.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom .feature {
+    max-width: 320px;
+}
+.bottom p {
+    border-top: 7px solid #facd00;
+    padding-top: 15px;
+    font-weight: 500;
+    color: #000;
+    font-size: large;
+}
 @media (max-width: 992px) {
-    .top {
-        padding: 30px;
+    .top,
+    .bottom {
         min-height: 500px;
     }
     .top h1 {
@@ -109,18 +141,11 @@ section {
     }
 }
 
-.bottom {
-    padding: 100px 0;
-}
-.bottom .feature {
-    max-width: 320px;
-}
-.bottom p {
-    border-top: 7px solid #facd00;
-    padding-top: 15px;
-    font-weight: 500;
-    color: #000;
-    font-size: large;
+@media (min-width: 1600px) {
+    .top,
+    .bottom {
+        min-height: 900px;
+    }
 }
 
 /* footer */
