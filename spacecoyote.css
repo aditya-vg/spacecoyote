@@ -128,7 +128,9 @@ section {
     .top,
     .bottom {
         min-height: 500px;
-        top: 35%;
+    }
+    .bottom {
+        top: 20%;
     }
     .top h1 {
         font-size: 3rem;
