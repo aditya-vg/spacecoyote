@@ -124,10 +124,13 @@ section {
 }
 @media (max-width: 992px) {  
     .logo {
-        max-width: 180px;
+        max-width: 150px;
+    }
+    .top{
+        top: 40%;
     }
     .top h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .mid h2 {
         font-size: 2rem;
