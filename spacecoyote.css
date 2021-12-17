@@ -15,6 +15,9 @@ header {
 section {
     position: relative;
 }
+a{
+    text-decoration: none;
+}
 
 .top {  
     display: flex;
